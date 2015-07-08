@@ -1,0 +1,35 @@
+﻿<Window x:Class="ExportMater.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Выгрузка xml-файла материалов (для Спектр)" Height="200" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" 
+                   Margin="3">Строка подключения базы SQL:</TextBlock>
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="3"></TextBox>
+
+        <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" 
+                   Margin="3">Путь к файлу выгрузки:</TextBlock>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="3"></TextBox>
+
+        <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Width="80" Height="30" Margin="3">Выполнить</Button>
+            <Button Width="80" Height="30" Margin="3">Выход</Button>
+            
+
+        </StackPanel>
+        
+
+    </Grid>
+</Window>
