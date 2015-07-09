@@ -20,9 +20,19 @@ namespace ExportMater
     /// </summary>
     public partial class MainWindow : Window
     {
+        WorkingEnv env;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            env = new WorkingEnv();
+            this.DataContext = env;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

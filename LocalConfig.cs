@@ -13,7 +13,15 @@ namespace ExportMater
         {
             get
             {
-                return ConfigurationManager.ConnectionStrings["KtsCleaning.Properties.Settings.spectrConnectionString"].ToString();
+                return ConfigurationManager.ConnectionStrings["ExportMater.Properties.Settings.spectrConnectionString"].ToString();
+            }
+        }
+
+        public static string OutputFile
+        {
+            get
+            {
+                return Properties.Settings.Default.spectrOutputFile;                
             }
         }
     }

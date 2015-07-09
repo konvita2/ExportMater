@@ -59,6 +59,7 @@
     <Compile Include="LocalConfig.cs" />
     <Compile Include="Mater.cs" />
     <Compile Include="SpectrDB.cs" />
+    <Compile Include="WorkingEnv.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -33,5 +33,14 @@ namespace ExportMater.Properties {
                 return ((string)(this["spectrConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("c:\\temp\\obmen_mater.xml")]
+        public string spectrOutputFile {
+            get {
+                return ((string)(this["spectrOutputFile"]));
+            }
+        }
     }
 }

@@ -6,8 +6,8 @@
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
@@ -17,15 +17,17 @@
         
         <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" 
                    Margin="3">Строка подключения базы SQL:</TextBlock>
-        <TextBox Grid.Row="0" Grid.Column="1" Margin="3"></TextBox>
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="3"
+                 Text="{Binding ConnString}" TextWrapping="Wrap"></TextBox>
 
         <TextBlock Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" 
                    Margin="3">Путь к файлу выгрузки:</TextBlock>
-        <TextBox Grid.Row="1" Grid.Column="1" Margin="3"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="3"
+                 Text="{Binding OutputFile}" TextWrapping="Wrap"></TextBox>
 
         <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
             <Button Width="80" Height="30" Margin="3">Выполнить</Button>
-            <Button Width="80" Height="30" Margin="3">Выход</Button>
+            <Button Width="80" Height="30" Margin="3" Click="Button_Click_1">Выход</Button>
             
 
         </StackPanel>
