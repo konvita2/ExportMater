@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataProcessor.cs" />
     <Compile Include="Dosp.cs" />
     <Compile Include="LocalConfig.cs" />
     <Compile Include="Mater.cs" />

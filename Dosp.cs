@@ -13,8 +13,8 @@ namespace ExportMater
         [Column(IsPrimaryKey=true, IsDbGenerated=true, Name="nozap")]
         public int Nozap { get; set; }
 
-        [Column(Name = "nozap")]
-        public int Vod { get; set;}
+        [Column(Name = "kod")]
+        public int Kod { get; set;}
 
         [Column(Name="vid")]
         public int Vid { get; set; }

@@ -34,5 +34,10 @@ namespace ExportMater
         {
             Close();
         }
+
+        private void btnRun_Click(object sender, RoutedEventArgs e)
+        {
+            //
+        }
     }
 }
