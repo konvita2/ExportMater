@@ -37,7 +37,16 @@ namespace ExportMater
 
         private void btnRun_Click(object sender, RoutedEventArgs e)
         {
-            //
+            DataProcessor dp = new DataProcessor();
+            SpectrXmlWriter sxw = new SpectrXmlWriter(env.OutputFile);
+            sxw.PrepareData(dp);
+            sxw.MakeXml();
+            sxw.UploadSortament();
+            sxw.UploadGrupmater();
+            sxw.UploadHimsostav();
+            sxw.UploadPostavka();
+
+            MessageBox.Show("Выгружено!");
         }
     }
 }

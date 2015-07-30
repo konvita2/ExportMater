@@ -22,13 +22,18 @@ namespace ExportMater
         [Column(Name = "im")]
         public string Im { get; set; }
 
+        
         [Column(Name = "sim")]
         public string Sim { get; set; }
 
+        
         [Column(Name = "us")]
-        public double Us { get; set; }
+        public decimal Us { get; set; }
 
+        
         [Column(Name = "obor")]
         public string Obor { get; set; }
+        
+        
     }
 }
